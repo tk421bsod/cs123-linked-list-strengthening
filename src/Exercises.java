@@ -56,13 +56,13 @@ public class Exercises {
         ListNode current = head;
         ListNode previous = null;
 
-        if (head == null || head.next == null) {
+        if (head == null || head.next == null) { 
             return null;
         }
 
         while (true) {
-            if (current.next == null){
-                previous.next = null;
+            if (current.next == null){ // If this is the last element
+                previous.next = null; // Point the previous node to nothing
                 return head;
             }
             previous = current;
@@ -85,6 +85,7 @@ public class Exercises {
         if (head == null) {
             return Integer.MAX_VALUE;
         }
+        return 0;
     }
 
     /**
