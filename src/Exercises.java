@@ -85,7 +85,16 @@ public class Exercises {
         if (head == null) {
             return Integer.MAX_VALUE;
         }
-        return 0;
+        ListNode current = head;
+
+        int minimum = current.data;
+        while (current != null) {
+            if (minimum < current.data) {
+                minimum = current.data;
+            }
+            current = current.next;
+        }
+        return minimum;
     }
 
     /**
