@@ -60,14 +60,13 @@ public class Exercises {
             return null;
         }
 
-        while (true) {
-            if (current.next == null){ // If this is the last element
-                previous.next = null; // Point the previous node to nothing
-                return head;
-            }
+        while (current.next != null) {
             previous = current;
             current = current.next;
         }
+
+        previous.next = null;
+        return head;
     }
 
     /**
