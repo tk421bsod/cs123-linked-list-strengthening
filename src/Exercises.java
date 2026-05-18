@@ -139,8 +139,8 @@ public class Exercises {
      * @param bigHead the head of the list with the doubled values
      * @return whether the values in bigList are twice the values in smallList
      */
-    public static boolean isDoubled(ListNode smallList, ListNode bigList) {
-        return false;
+    public static boolean isDoubled(ListNode smallHead, ListNode bigHead) {
+
     }
 
     /**
