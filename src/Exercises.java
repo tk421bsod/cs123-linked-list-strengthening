@@ -88,7 +88,7 @@ public class Exercises {
 
         int minimum = current.data;
         while (current != null) {
-            if (minimum < current.data) {
+            if (current.data < minimum) {
                 minimum = current.data;
             }
             current = current.next;
